@@ -1,24 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-
-class Tabuada
-{
-    public static List<int> CalcularTabuada(int numero)
-    {
-        List<int> tabuada = new List<int>();
-        for (int i = 1; i <= 10; i++)
-        {
-            tabuada.Add(numero * i);
-        }
-        return tabuada;
-    }
-}
-
+using TABUADA;
 class Program
 {
     static void Main(string[] args)
     {
-        int numeroDesejado = 18;
+        int numeroDesejado = 2;
+        var tabuada = new Tabuada();
         List<int> tabuadaDezoito = Tabuada.CalcularTabuada(numeroDesejado);
 
         Console.WriteLine($"Tabuada do número {numeroDesejado}:");
